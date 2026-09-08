@@ -1,0 +1,82 @@
+.hotels {
+  padding: 70px 50px;
+  background-color: white;
+}
+
+.hotel-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.hotel-card {
+  background-color: #f8faf9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.13);
+}
+
+.hotel-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(31, 111, 91, 0.35), rgba(31, 111, 91, 0.35)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hotel-image span {
+  padding: 10px 18px;
+  border-radius: 20px;
+  background-color: white;
+  color: #1f6f5b;
+  font-weight: 600;
+}
+
+.hotel-info {
+  padding: 20px;
+}
+
+.hotel-info h3 {
+  font-size: 22px;
+  color: #1f6f5b;
+  margin-bottom: 8px;
+}
+
+.hotel-info p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.hotel-info .hotel-location {
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hotel-info button {
+  margin-top: 15px;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f6f5b;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hotel-info button:hover {
+  background-color: #175545;
+}
